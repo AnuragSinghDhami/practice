@@ -32,6 +32,7 @@ class Item{
 private:
     string upcCode;
     double price;
+    double fees;
 public:
 
     Item(string upc, double cost) : upcCode(move(upc)), price(cost) {}
