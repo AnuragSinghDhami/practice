@@ -135,7 +135,6 @@ public:
         std::cout << "Insert money first.\n";
     }
     void refund(VendingMachine* machine) override {
-        std::cout << "No money to refund.\n";
     }
 };
 
