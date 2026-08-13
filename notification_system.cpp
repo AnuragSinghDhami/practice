@@ -47,12 +47,9 @@ public:
 
 int main(){
 
-    try{
+    
         unique_ptr<Notification> email = NotificationFactory::createNotification(NotificationType::EMAIL);
         email->send("your order has been shipped.");
         cout << "done" << endl;
-    }
-    catch(const exception& e){
-        cerr << "error" << e.what() << endl;
-    }
+    
 }
